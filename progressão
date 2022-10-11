@@ -1,0 +1,25 @@
+Vendedor
+
+-post ok
+-get ok
+-updadte ok
+-deletar ok
+
+Produto
+
+-post ok
+-get ok
+-update ok
+-delete ok
+
+Compra
+
+-post ok
+-get ok
+-update
+-delete
+
+
+
+
+

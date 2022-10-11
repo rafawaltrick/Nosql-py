@@ -1,5 +1,4 @@
 def buscarNome(meuBanco):
-    #Query
     nome = input(str("Digite o Nome Desejado: "))
     
     colecao = meuBanco.usuario
@@ -23,9 +22,4 @@ def buscarTodos(meuBanco):
     for x in mydoc:
         print(x) 
 
-def buscarProdutos(meuBanco):
-
-    colecao = meuBanco.produto
-    mydoc = colecao.find()
-    for x in mydoc:
-        print(x["nome"])               
+    

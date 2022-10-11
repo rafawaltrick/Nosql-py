@@ -1,18 +1,25 @@
 def inserirCompra(meuBanco):
     cadastrando = True
-    nome = []
+    produto = []
     while cadastrando:
-        cadastrarCompra = input(str("Deseja cadastra Produto? (sim/não): "))
-        if cadastrarCompra.lower() == "sim":
+        cadastrarProduto = input(str("Deseja cadastra Produto? (sim/não): "))
+        if cadastrarProduto.lower() == "sim":
             nome = input(str("Digite o Nome do Produto: "))
-            nome.append({
-                'nome': nome
+            valor = input(str("Digite o valor do produto: "))
+            produto.append({
+                '_id': {},
+                'nome': nome,
+                'valor': valor
             })
         else:
             cadastrando = False
+    data_compra = input(str("Digita a Data da Compra: "))
     colecao = meuBanco.compra
     lista = {
-        'nome': nome 
+        'produto': produto,
+        'usuario': ({'_id': {}, 'nome': {}}),
+        'vendedor': ({'_id': {}, 'nome': {}}),
+        'data_compra': data_compra
             }
     x = colecao.insert_one(lista)
     print(x.inserted_id)

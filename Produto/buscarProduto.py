@@ -3,7 +3,7 @@ def buscarProduto(meuBanco):
 
     colecao = meuBanco.produto
     comando = {"nome": nome}
-    mudoc =colecao.find_one(comando)
+    mydoc =colecao.find_one(comando)
 
     if mydoc == None:
         print("Produto Não encontrado.")

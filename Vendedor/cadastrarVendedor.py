@@ -13,3 +13,4 @@ def cadastrarVendedor(meuBanco):
     }
 
     x = colecao.insert_one(mydict)
+    
