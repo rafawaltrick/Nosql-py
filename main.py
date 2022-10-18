@@ -4,6 +4,7 @@ import Menus.menuUsuario
 import Menus.menuProduto
 import Menus.menuVendedor
 import Menus.menuCompra
+import Menus.menuReds
 from pymongo.server_api import ServerApi
 
 
@@ -24,6 +25,7 @@ while execucao:
         Digite "2" para Menu Produto. \n
         Digite "3" para Menu Vendedor. \n
         Digite "4" para Menu Compra. \n
+        Digite "5" para menu Redis. \n
         Digite "0" para Sair.\n
     ''')
     opcoes = input(str("Escolha a Opção Desejada: "))
@@ -35,7 +37,9 @@ while execucao:
         case "3":
             Menus.menuVendedor.listaVendedor(meuBanco)
         case "4":
-            Menus.menuCompra.listaCompra(meuBanco)   
+            Menus.menuCompra.listaCompra(meuBanco)  
+        case "5":
+            Menus.menuReds.listaReds(clienteRedis)
         case "0":
             break
             
