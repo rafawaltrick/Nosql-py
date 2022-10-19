@@ -39,7 +39,7 @@ while execucao:
         case "4":
             Menus.menuCompra.listaCompra(meuBanco)  
         case "5":
-            Menus.menuReds.listaReds(clienteRedis)
+            Menus.menuReds.listaRedis(clienteRedis, meuBanco)
         case "0":
             break
             
