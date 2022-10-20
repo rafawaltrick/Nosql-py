@@ -11,6 +11,7 @@ def listaRedis(clienteRedis, meuBanco):
         print('''
         
         Digite "1" para Adicionar Favoritos ao Redis. \n
+        Digite "2" para Adicionar Um Item a Lista dos Favoritos. \n
         
         
             ''')
@@ -20,4 +21,6 @@ def listaRedis(clienteRedis, meuBanco):
         match opcoes:
             case "1": 
                 funcao.setaRedis(clienteRedis,meuBanco)
+            case "2":
+                funcao.addFavoritos(clienteRedis, meuBanco)    
                 

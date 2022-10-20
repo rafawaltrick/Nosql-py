@@ -14,6 +14,7 @@ def buscarNome(meuBanco):
         print(f'nome:{mydoc["nome"]}')
         print(f'telefone:{mydoc["telefone"]}')
         print(f'email:{mydoc["email"]}')
+    return mydoc
 
 def buscarTodos(meuBanco):
 
