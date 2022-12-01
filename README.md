@@ -1,1 +1,1 @@
-# Nosql-py-mongo
+# Nosql-py
